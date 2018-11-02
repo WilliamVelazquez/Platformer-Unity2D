@@ -240,6 +240,7 @@ MonoBehaviour:
   speed: 5
   jumpSpeed: 300
   isGrounded: 1
+  playerAnimator: {fileID: 135604642}
 --- !u!95 &135604642
 Animator:
   serializedVersion: 3
@@ -3840,7 +3841,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1165122238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28068185, y: 0.17957914, z: -10}
+  m_LocalPosition: {x: -0.61647487, y: 0.17999828, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4242,7 +4243,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841178483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11143899, y: 0.17999828, z: -10}
+  m_LocalPosition: {x: -0.61647487, y: 0.17999828, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1785233001}
