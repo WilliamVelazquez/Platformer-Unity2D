@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 135604642}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3714,6 +3714,7 @@ GameObject:
   - component: {fileID: 495870506}
   - component: {fileID: 495870505}
   - component: {fileID: 495870504}
+  - component: {fileID: 495870509}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -3826,6 +3827,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &495870509
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495870503}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fd62aa6d8088a843a4a23a463d25f1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &870140827 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1085418761395456, guid: f1823e7e736a8f04db85fa5b4fa51cd2,
@@ -3965,7 +3983,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1165122238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.61647487, y: 0.17999828, z: -10}
+  m_LocalPosition: {x: 1.5837386, y: 0.17874086, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4367,7 +4385,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841178483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.61647487, y: 0.17999828, z: -10}
+  m_LocalPosition: {x: 0.40978408, y: 0.17999828, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1785233001}
