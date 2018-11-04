@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Collectable : MonoBehaviour {
 
-    int collectableQuantity = 0;
+    public static int collectableQuantity = 0;
     public Text collectableText;
 
 	// Use this for initialization
