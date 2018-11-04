@@ -10,11 +10,12 @@ public class PlayerMovement : MonoBehaviour {
 
     public bool isGrounded = true;
     public Animator playerAnimator;
+    AudioSource playerJumpAudio;
 
     // Use this for initialization
     void Start () {
-		
-	}
+        playerJumpAudio = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -40,6 +41,8 @@ public class PlayerMovement : MonoBehaviour {
             //if (Input.GetKeyDown(KeyCode.Space))
             if (Input.GetButtonDown("Jump"))
             {
+                //GetComponent<AudioSource>().Play();
+                playerJumpAudio.Play();
                 playerRb.AddForce(Vector2.up * jumpSpeed);
                 isGrounded = false;
                 playerAnimator.SetTrigger("Jump");
