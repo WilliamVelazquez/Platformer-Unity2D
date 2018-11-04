@@ -8,10 +8,12 @@ public class Collectable : MonoBehaviour {
     public static int collectableQuantity = 0;
     public Text collectableText;
 
+    ParticleSystem collectableParticle;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+        collectableParticle = GameObject.Find("CollectableParticle").GetComponent<ParticleSystem>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,6 +24,8 @@ public class Collectable : MonoBehaviour {
     {
         if(collision.tag == "Player")
         {
+            collectableParticle.transform.position = transform.position;
+            collectableParticle.Play();
             gameObject.SetActive(false);
             collectableQuantity++;
             collectableText.text = collectableQuantity.ToString();

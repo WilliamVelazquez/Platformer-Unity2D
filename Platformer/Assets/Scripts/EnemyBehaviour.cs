@@ -11,11 +11,15 @@ public class EnemyBehaviour : MonoBehaviour {
     public float delay = 3.5f;
     public float speed = 2.5f;
 
+    ParticleSystem enemyParticle;
+
 	// Use this for initialization
 	void Start () {
         enemyRb = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = GetComponent<SpriteRenderer>();
         enemyAnimator = GetComponent<Animator>();
+
+        enemyParticle = GameObject.Find("EnemyParticle").GetComponent<ParticleSystem>();
     }
 	
 	// Update is called once per frame
@@ -41,6 +45,9 @@ public class EnemyBehaviour : MonoBehaviour {
         {
             if(transform.position.y + .03f < collision.transform.position.y)
             {
+                //enemyParticle.transform.position = new Vector3(transform.position.x, transform.position.y +1.55f, transform.position.z); 
+                enemyParticle.transform.position = new Vector2(transform.position.x, transform.position.y + 1.55f);
+                enemyParticle.Play();
                 enemyAnimator.SetBool("isDead", true);
             }
         }
