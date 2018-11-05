@@ -409,6 +409,7 @@ GameObject:
   - component: {fileID: 135604641}
   - component: {fileID: 135604642}
   - component: {fileID: 135604643}
+  - component: {fileID: 135604644}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -621,6 +622,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &135604644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 135604636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7967347c28b41e44c8683a7984b97364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 1454768574}
+  - {fileID: 1451268382}
+  - {fileID: 1370540820}
+  changeScene: {fileID: 1102921611}
 --- !u!1 &170949846
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,7 +4836,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1165122238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5723152, y: 0.17999828, z: -10}
+  m_LocalPosition: {x: 0.62849045, y: 0.17935455, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16246,7 +16263,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841178483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5723152, y: 0.17999828, z: -10}
+  m_LocalPosition: {x: 0.027684689, y: 0.17999828, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1785233001}
