@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstLevel.unity
     guid: 694c615396ed7164b869bcd9f8884d49
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 87fa14a45ef32174b96e5efb69d40790
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: e789a98ecfc9b3a4d877e79e10ca1a1b
