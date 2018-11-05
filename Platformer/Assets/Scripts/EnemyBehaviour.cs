@@ -12,14 +12,16 @@ public class EnemyBehaviour : MonoBehaviour {
     public float speed = 2.5f;
 
     ParticleSystem enemyParticle;
+    AudioSource enemyDeadAudio;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         enemyRb = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = GetComponent<SpriteRenderer>();
         enemyAnimator = GetComponent<Animator>();
 
         enemyParticle = GameObject.Find("EnemyParticle").GetComponent<ParticleSystem>();
+        enemyDeadAudio = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -47,6 +49,7 @@ public class EnemyBehaviour : MonoBehaviour {
             {
                 //enemyParticle.transform.position = new Vector3(transform.position.x, transform.position.y +1.55f, transform.position.z); 
                 enemyParticle.transform.position = new Vector2(transform.position.x, transform.position.y + 1.55f);
+                enemyDeadAudio.Play();
                 enemyParticle.Play();
                 enemyAnimator.SetBool("isDead", true);
             }

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class Collectable : MonoBehaviour {
 
     public static int collectableQuantity = 0;
-    public Text collectableText;
+    //public Text collectableText;
+    Text collectableText;
 
     ParticleSystem collectableParticle;
     AudioSource collectableAudio;
@@ -15,6 +16,8 @@ public class Collectable : MonoBehaviour {
 	void Start () {
         collectableParticle = GameObject.Find("CollectableParticle").GetComponent<ParticleSystem>();
         collectableAudio = GetComponentInParent<AudioSource>();
+        collectableText = GameObject.Find("CollectableQuantityText").GetComponent<Text>();
+        //collectableText = GameObject.FindObjectOfType(Text);
     }
 	
 	// Update is called once per frame
